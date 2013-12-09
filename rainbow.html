@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>rainbow</title>
+        <style type="text/css">
+            html,body,div,ul,li,span,a{margin:0;padding:0;}
+            #holder{width:400px;height:400px;border-radius: 50%;overflow: hidden; margin:100px 0 0 200px;}
+            .container{list-style: none; width:400px;height:400px; position: relative;}
+            .container li{list-style: none;  position: absolute; left:50%; top: 50%; width: 200px; height: 200px;background: #ccc;
+                -webkit-transform-origin: 100% 100%;
+                -moz-transform-origin: 100% 100%;
+                -ms-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+                /*border:1px solid #ccc;*/
+                overflow:hidden;
+                margin: -200px 0 0 -200px;
+            }
+            .container a{width: 400px;height: 400px;position: absolute;color:#fff;-webkit-transform:skew(-38deg) rotate(-64deg); -ms-transform:skew(-38deg) rotate(-64deg) ; -moz-transform:skew(-38deg) rotate(-64deg); transform:skew(-38deg) rotate(-64deg);text-align:center; display:block; border-radius: 50%;text-decoration: none;font:18px/1 Verdana;
+            }
+            .container a:hover{opacity:.8;filter:alpha(opacity=80);}
+            .container span{position: relative; top: 20px;}
+            .container li:nth-child(1){-webkit-transform: rotate(51deg) skew(38deg); -ms-transform: rotate(51deg) skew(38deg); -moz-transform: rotate(51deg) skew(38deg); transform: rotate(51deg) skew(38deg);}
+            .container li:nth-child(2){-webkit-transform: rotate(102deg) skew(38deg); -ms-transform: rotate(102deg) skew(38deg); -moz-transform: rotate(102deg) skew(38deg); transform: rotate(102deg) skew(38deg);}
+            .container li:nth-child(3){-webkit-transform: rotate(154deg) skew(38deg); -ms-transform: rotate(154deg) skew(38deg); -moz-transform: rotate(154deg) skew(38deg); transform: rotate(154deg) skew(38deg);}
+            .container li:nth-child(4){-webkit-transform: rotate(206deg) skew(38deg); -ms-transform: rotate(206deg) skew(38deg); -moz-transform: rotate(206deg) skew(38deg); transform: rotate(206deg) skew(38deg);}
+            .container li:nth-child(5){-webkit-transform: rotate(258deg) skew(38deg); -ms-transform: rotate(258deg) skew(38deg); -moz-transform: rotate(258deg) skew(38deg); transform: rotate(258deg) skew(38deg);}
+            .container li:nth-child(6){-webkit-transform: rotate(309deg) skew(38deg); -ms-transform: rotate(309deg) skew(38deg); -moz-transform: rotate(309deg) skew(38deg); transform: rotate(309deg) skew(38deg);}
+            .container li:nth-child(7){-webkit-transform: rotate(0deg) skew(38deg); -ms-transform: rotate(0deg) skew(38deg); -moz-transform: rotate(0deg) skew(38deg); transform: rotate(0deg) skew(38deg);}
+
+            .container li:nth-child(1) a{background:rgb(241,76,96);}
+            .container li:nth-child(2) a{background:rgb(229,180,43);}
+            .container li:nth-child(3) a{background:rgb(236,244,77);}
+            .container li:nth-child(4) a{background:rgb(109,233,110);}
+            .container li:nth-child(5) a{background:rgb(121,192,214);}
+            .container li:nth-child(6) a{background:rgb(175,105,230);;}
+            .container li:nth-child(7) a{background:rgb(124,63,228);}
+
+            .container:after{content:" ";display:block; width:200px;height:200px;position: absolute;background: #fff;border-radius: 50%;left:50%;top:50%;margin:-100px;}
+        </style>
+    </head>
+    <body>
+        <div id="holder">
+            <ul class="container">
+                <li><a href="#"><span>MONDAY</span></a></li>
+                <li><a href="#"><span>SERIOUSLY</span></a></li>
+                <li><a href="#"><span>LOVE</span></a></li>
+                <li><a href="#"><span>THIS</span></a></li>
+                <li><a href="#"><span>FUNNY</span></a></li>
+                <li><a href="#"><span>SKILL</span></a></li>
+                <li><a href="#"><span>!</span></a></li>
+            </ul>
+        </div>
+    </body>
+</html>
